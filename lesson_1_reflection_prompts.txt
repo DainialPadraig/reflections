@@ -1,0 +1,48 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    By seeing the original text and the modifications to that text...and nothing 
+    else...it makes it easy to see where a mistake could be introduced.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It helps you back up to a previously working version if you can't figure out
+    why the current version isn't working and it can help you identify common 
+    sources of error in your programming.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The pros of manually choosing when to commit changes are that the commit
+    can be logical (and have a meaningful annotation associated with it) and 
+    that you can do the commits offline.
+
+    The cons are that you could forget to commit, commit at a time that doesn't
+    make sense, and - worst of all - lose work because you waited too long to
+    make a commit.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git is designed to be a version control system for a software project, which
+    frequently will consist of multiple files. Google Docs is a text editor, with
+    revision tracking, and it is not that common to have a document that requires
+    multiple files.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    You can find a specific commit with git log and then use git diff to 
+    determine what changes were made in that commit compared to a previous 
+    commit.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Because you can always go back to a working version and...hopefully...you
+    can figure out what broke your code by doing a diff.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    My next software project.
