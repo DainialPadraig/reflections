@@ -14,13 +14,56 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	The staging area allows the collection of files that relate to a single
+	logical change. If all the files had to be commited every time, it would
+	be difficult to know which were related to the change and which weren't.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Branches would be useful for at least four situations:
+
+		1. 	When running an experiment that you aren't sure you want to be a part 
+			of the main branch, because you don't know if it will work or if it will
+			be of value.
+
+		2. 	When creating a version of the code that will be a one-off that you
+			won't be maintaining, for example, a simplified demo or a custom
+			version for a client that will not be maintained after delivery.
+
+		3.	A different version or versions of the program that will be updated
+			over time, but that doesn't make sense to keep in the main branch. 
+			For example, the main branch might be the core of the program that
+			you market as the personal version. In that case, you may want separate 
+			branches to contain the additional functionality for a professional
+			version and an enterprise version. Then you could do a merge before
+			shipping to make sure that all of the versions get updates to the 
+			core version of the program, while also being able to make changes
+			to the extended versions that won't affect the core version.
+
+		4.	You could use separate branches for localized versions of the program.
+			For example, versions with different interface languages or that use 
+			different currency. Again, you'd probably want the core functionality 
+			on the main branch and the localized code on other branches that could
+			be merged for release.
+
 How do the diagrams help you visualize the branch structure?
+
+	The diagrams make the various branches in the tree explicit and make it easier
+	to see which commits are missing from a branch or if there are unreachable commits.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	The two branches have now been merged back into the master branch. The 
+	diagram shows that the branch was split off of main and then was merged back in -
+	which is a good representation of what happened.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	The pros of automatic merges vs manual merges are that most of the time, you
+	will be able to do a merge without having to worry about conflicts because git
+	is checking for them on its own. The con is that you need to manually check the 
+	conflict when one does occur...and it may seem obvious to you how the conflict
+	should have been resolved, even though git doesn't know what to do with it.
