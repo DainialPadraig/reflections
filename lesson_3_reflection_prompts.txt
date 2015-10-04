@@ -22,24 +22,69 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    The primary reason is that you may be working locally on files that are
+    also in the remote repo. It would get really irritating if the files in
+    your local repo got updated while you were still working on them. Suddenly,
+    the changes you were working on would be gone. It's also possible that the
+    remote repo may have a bug in it. Better to know that the local repo is working
+    correctly before merging it with the changes made in the remote repo, so it's
+    easier to isolate the cause of the bug.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    A fork is like a clone, but it can only be done on GitHub. It is useful 
+    for making a copy of a repo to work on when you either don't have permission
+    to modify the original repo or you don't want to change it.
+
+    A clone is a complete copy of a repo and it is how you will usually make a 
+    copy of a fork locally so you can work on it (though you could make some
+    changes on the fork in GitHub, using GitHub's editing tools).
+
+    A branch is a deviation from the master branch made in a single repo. It 
+    can be useful for making changes that you don't want to be a part of the 
+    main branch - either temporarily or permanently.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    The primary advantage is that you can work offline and have a local snapshot
+    of the state of the remote repo at the time you started working. It should
+    also make merging easier when you do want to push your changes to the remote
+    repo, since you have a known point in the repo history when you were in sync.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    There are a number of ways, which - unfortunately - I have used in the past.
+
+    One way would be to email modified files to collaborators to get their input.
+    This is slow and it can be hard to know if you have the right changes. It also
+    makes it hard to merge changes if someone else modifies their own copy of the
+    file.
+
+    Another way is to use a shared drive. This has a similar problem to email - if
+    more than one person works on a file, your changes may get replaced by their copy
+    or you may end up with a bunch of files with titles to clarify which copy they are,
+    like initials at the end of the file name. Again, it's hard to know which is the 
+    correct file and you don't get notified about changes necessarily.
+
+    You can also use a shared drive with a file lock. This makes merging easy because
+    you are always editing the latest copy of the file, but it is a real pain if someone
+    else has a file open that you need - especially if they forgot to unlock it before 
+    they went on vacation! Communication is also more difficult because you have to 
+    ask the other person when they will be done with the file and it can be hard to
+    see why they made a change - so it requires a lot more back-and-forth.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    A different branch can be useful when we have one change that we want to 
+    submit as a pull request because we don't want to make it a part fo the master
+    until other collaborators have had a chance to review it. This does make the
+    process more time consuming and complicated, so - if you have a non-controversial 
+    change and you have access to update the repo on GitHun - it would probably be more
+    efficient to just update the master branch. But, if you don't have access or the 
+    change does need to be discussed, the branch and pull request is probably the best
+    approach.
+    
