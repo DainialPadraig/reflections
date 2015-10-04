@@ -1,0 +1,45 @@
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+    Any time I know I want to keep the contents of my repo...or I want to access
+    it from another computer or another location. I have become a total cloud
+    convert over the past several years. It's so nice to be able to access my
+    data and projects wherever I am in the world without worrying about a 
+    hard drive crash or losing a thumb drive or trying to remember which
+    computer has the latest version of a file on it. Keeping git repos on 
+    GitHub means I don't have to worry about that.
+    
+    Of course, another great reason for using GitHub is that it makes it possible
+    to collaborate on public and private projects with contributors all over the 
+    world. Whether I'm working on my own open source projects or community projects
+    for Code for Tucson or the Google Developers Group Tucson, it's great to be able
+    to share our work in a single repo.
+    
+    It also doesn't hurt that GitHub is a great way to share projects you are
+    proud of and would like to make part of your portfolio. I can't say I have
+    a lot of those in my repos at present, but I'm working on it!
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+    Fill in your answer here
+
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+    Fill in your answer here
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+    Fill in your answer here
+
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+    Fill in your answer here
+
+When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+
+    Fill in your answer here
